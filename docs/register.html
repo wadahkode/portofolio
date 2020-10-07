@@ -12,6 +12,20 @@
         #content {
             margin-top: -3rem;
         }
+        #login-spinner,
+        #register-spinner {
+            border: 2px solid #f3f3f3; /* Light grey */
+            border-top: 2px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            animation: spin 2s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(360deg);}
+        }
     </style>
 </head>
 <body>
@@ -58,7 +72,7 @@
         </div>
     </div-->
     
-    <div id="content" class="uk-position-relative">
+    <div id="content" class="AppContent uk-position-relative">
         <div class="uk-container-small"><div class="uk-height-large">
     <div class="uk-grid-collapse uk-child-width-expand@s" uk-grid="">
     <div class="uk-card uk-card-body uk-padding-small">
@@ -76,7 +90,7 @@
             <div class="uk-margin">
                 <div class="uk-inline">
                     <span class="uk-form-icon" uk-icon="icon: lock;"></span>
-                    <input type="password" class="uk-input uk-form-width-large uk-form-medium" id="password" placeholder="Password" required="" />
+                    <input type="password" class="uk-input uk-form-width-large uk-form-medium" id="password" placeholder="Password" />
                 </div>
             </div>
             <div class="uk-margin">
@@ -85,7 +99,7 @@
                 </label>
             </div>
             <div class="uk-margin">
-                <button type="button" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 quick-btn-register">
+                <button type="submit" class="uk-flex uk-flex-center uk-flex-middle uk-button uk-button-primary uk-button-medium uk-width-1-1 quick-btn-register">
                       Register
                 </button>
             </div>

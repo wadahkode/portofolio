@@ -20479,4 +20479,9 @@ h3 {
   color: #fefefe;
 }
 
+.heart-like[uk-icon="icon: heart"] svg path {
+  fill: #f22538;
+  color: #fff;
+}
+
 /*# sourceMappingURL=uikit.css.map */
