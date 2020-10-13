@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Wadahkode | Version</title>
+    <title>Wadahkode | Create</title>
     <link rel="stylesheet" href="https://wadahkode.github.io/portofolio/vendor/uikit/css/uikit.css" />
     <link rel="stylesheet" href="https://wadahkode.github.io/portofolio/vendor/fontawesome/css/all.min.css">
     <link rel="shortcut icon" href="https://wadahkode.github.io/portofolio/favicon.jpg" type="image/x-icon" />
@@ -259,31 +259,49 @@
     
     <div id="content" class="AppContent uk-position-relative">
         <div class="uk-container">
-            <h3>Versi aplikasi</h3>
+            <h3>Buat artikel</h3>
 
-<div class="uk-card @uk-card-default uk-box-shadow-small">
-    <div class="uk-card-body" style="padding-left: 0; padding-right: 0;">
-        <ul>
-            <li>
-                <h4>Rilis pertama:</h4> version 1.0.8
-            </li>
-            <li class="uk-margin-small-top">
-                <h4>Rilis kedua:</h4> version 1.0.85
-            </li>
-            <li class="uk-margin-small-top">
-                <h4>Rilis ketiga:</h4> version 1.0.86
-            </li>
-            <li class="uk-margin-small-top">
-                <h4>Rilis keempat:</h4> version 1.0.87
-            </li>
-            <li class="uk-margin-small-top">
-                <h4>Rilis keempat:</h4> version 1.0.88
-            </li>
-            <li class="uk-margin-small-top">
-                <h4>Rilis kelima:</h4> version 1.0.89
-            </li>
-        </ul>
-    </div>
+<div>
+    <form id="form-article-create" method="POST">
+    <fieldset class="uk-fieldset">
+        <!--legend class="uk-legend">Judul</legend-->
+        <div class="uk-margin">
+            <input class="uk-input" id="articleTitle" name="articleTitle" type="text" placeholder="judulnya apa?" autocomplete="off" />
+        </div>
+        <div class="uk-margin" uk-margin="">
+            <div class="uk-flex">
+                <input class="uk-input uk-background-secondary uk-text-light uk-disabled" id="articleHostname" value="https://wadahkode.github.io/portofolio/article?key=" />
+                <input class="uk-input uk-disabled" id="articleUrl" name="articleUrl" value="" />
+            </div>
+        </div>
+        <div class="uk-margin">
+            <textarea class="uk-textarea" id="articleContent" name="articleContent" rows="5" placeholder="isinya apa?"></textarea>
+        </div>
+        <div class="uk-margin">
+            <div class="js-upload uk-placeholder uk-text-center">
+                <span uk-icon="icon: cloud-upload"></span>
+                <span class="uk-text-middle">Attach binaries by dropping them here or</span>
+                <div uk-form-custom="">
+                    <input class="articlePhoto" type="file" multiple="" />
+                    <span class="uk-link">selecting one</span>
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin uk-margin-remove-bottom">
+            <div uk-slider="center: true">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                    <div class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                        <img id="preview-photo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin uk-button-group">
+            <button type="button" class="uk-flex uk-flex-middle uk-flex-center uk-button uk-button-primary uk-button-medium quick-btn-create-article">Pajang sekarang</button>
+            <button type="button" class="uk-flex uk-flex-middle uk-flex-center uk-button uk-button-danger uk-button-medium quick-btn-draft-article uk-margin-left">Simpan dulu</button>
+        </div>
+    </fieldset>
+</form>
 </div>
 
         </div>
