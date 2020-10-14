@@ -10685,4 +10685,15 @@ h3 {
   color: #fff;
 }
 
+.ck-content {
+  overflow: hidden;
+}
+
+.ck-content .ck.ck-editor {
+  width: 365px;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+
 /*# sourceMappingURL=uikit.css.map */
