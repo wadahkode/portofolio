@@ -10680,7 +10680,7 @@ h3 {
   color: #fefefe;
 }
 
-.heart-like[uk-icon="icon: heart"] svg path {
+.heart-like[uk-icon="icon: heart; ratio: 1"] svg path {
   fill: #f22538;
   color: #fff;
 }
