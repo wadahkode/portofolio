@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wadahkode | Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://wadahkode.github.io/portofolio/vendor/uikit/css/uikit.css" />
     <link rel="stylesheet" href="https://wadahkode.github.io/portofolio/vendor/fontawesome/css/all.min.css">
     <link rel="shortcut icon" href="https://wadahkode.github.io/portofolio/favicon.jpg" type="image/x-icon" />
     <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+    
         #content {
-            margin-top: -4.5rem;
+            margin-top: -6rem;
         }
         #login-spinner,
         .spinner {
@@ -34,183 +39,22 @@
     </style>
 </head>
 <body id="App">
+    <div class="splashscreen"></div>
     <div class="uk-position-relative uk-position-z-index uk-height-small">
     <div id="homeNavbar" class="uk-position-fixed uk-width-1-1">
-        <nav class="uk-navbar-container uk-navbar-primary uk-background-primary uk-box-shadow-medium" uk-navbar>
-            <div class="uk-navbar-left">
-                <a data-href="#" class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-push"></a>
-                <!--a href="https://wadahkode.github.io/portofolio/index.html" class="uk-button uk-padding-small">
-                    <span uk-icon="icon: arrow-left; ratio: 1.5"></span>
-                </a-->
-                <!--span class="uk-logo @uk-margin-small-left">
-                    Wadahkode
-                </span-->
-            </div>
-            <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active">
-                        <a data-href="#" class="uk-button">
-                            <sup class="uk-badge" style="background: #e53935;">5</sup>
-                            <span uk-icon="icon: bell"></span>
-                        </a>
-                        <div class="uk-navbar-dropdown uk-background-muted uk-padding-small" style="height: 100vh" uk-drop="offset: 0; boundary: !nav; boundary-align: true; pos: bottom-justify; animation: uk-animation-slide-right-small; duration: 100">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-nav-header">Notification</li>
-                                <li class="uk-nav-divider"></li>
-                                <div id="notification" style="height: 80vh; overflow: auto;">
-                                <li class="uk-card @uk-card-default uk-border uk-margin-small">
-                                    <div class="uk-card-header uk-padding-small uk-margin-auto">
-                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                            <div class="uk-width-auto">
-                                                <img class="uk-border-circle" width="32" height="32" src="https://wadahkode.github.io/portofolio/assets/avatar/no-image.png">
-                                            </div>
-                                            <div class="uk-width-expand">
-                                                <h5 class="@uk-card-title uk-margin-remove-bottom">Denganmu kini ku bahagia</h5>
-                                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2020-09-18T13:00">September 18, 2020</time></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--div class="uk-card-body uk-padding-auto uk-margin-auto">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div-->
-                                </li>
-                                <li class="uk-card @uk-card-default uk-border uk-margin-small">
-                                    <div class="uk-card-header uk-padding-small uk-margin-auto">
-                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                            <div class="uk-width-auto">
-                                                <img class="uk-border-circle" width="32" height="32" src="https://wadahkode.github.io/portofolio/assets/avatar/no-image.png">
-                                            </div>
-                                            <div class="uk-width-expand">
-                                                <h5 class="@uk-card-title uk-margin-remove-bottom">Berbagai Tawa Dan Canda</h5>
-                                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2020-09-18T13:00">September 18, 2020</time></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--div class="uk-card-body uk-padding-auto uk-margin-auto">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div-->
-                                </li>
-                                <li class="uk-card @uk-card-default uk-border uk-margin-small">
-                                    <div class="uk-card-header uk-padding-small uk-margin-auto">
-                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                            <div class="uk-width-auto">
-                                                <img class="uk-border-circle" width="32" height="32" src="https://wadahkode.github.io/portofolio/assets/avatar/no-image.png">
-                                            </div>
-                                            <div class="uk-width-expand">
-                                                <h5 class="@uk-card-title uk-margin-remove-bottom">Hilangkan gairah lelah hatiku</h5>
-                                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2020-09-18T13:00">September 18, 2020</time></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--div class="uk-card-body uk-padding-auto uk-margin-auto">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div-->
-                                </li>
-                                <li class="uk-card @uk-card-default uk-border uk-margin-small">
-                                    <div class="uk-card-header uk-padding-small uk-margin-auto">
-                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                            <div class="uk-width-auto">
-                                                <img class="uk-border-circle" width="32" height="32" src="https://wadahkode.github.io/portofolio/assets/avatar/no-image.png">
-                                            </div>
-                                            <div class="uk-width-expand">
-                                                <h5 class="@uk-card-title uk-margin-remove-bottom">Tiada yang bisa mengganti dirimu</h5>
-                                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2020-09-18T13:00">September 18, 2020</time></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--div class="uk-card-body uk-padding-auto uk-margin-auto">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div-->
-                                </li>
-                                <li class="uk-card @uk-card-default uk-border uk-margin-small">
-                                    <div class="uk-card-header uk-padding-small uk-margin-auto">
-                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                            <div class="uk-width-auto">
-                                                <img class="uk-border-circle" width="32" height="32" src="https://wadahkode.github.io/portofolio/assets/avatar/no-image.png">
-                                            </div>
-                                            <div class="uk-width-expand">
-                                                <h5 class="@uk-card-title uk-margin-remove-bottom">Sepanjang hidupku hanya ingin bersamamu</h5>
-                                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2020-09-18T13:00">September 18, 2020</time></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--div class="uk-card-body uk-padding-auto uk-margin-auto">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div-->
-                                </li>
-                                <li class="uk-card @uk-card-default uk-border uk-margin-small">
-                                    <div class="uk-card-header uk-padding-small uk-margin-auto">
-                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                            <div class="uk-width-auto">
-                                                <img class="uk-border-circle" width="32" height="32" src="https://wadahkode.github.io/portofolio/assets/avatar/no-image.png">
-                                            </div>
-                                            <div class="uk-width-expand">
-                                                <h5 class="@uk-card-title uk-margin-remove-bottom">Sepanjang hidupku hanya ingin bersamamu</h5>
-                                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2020-09-18T13:00">September 18, 2020</time></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--div class="uk-card-body uk-padding-auto uk-margin-auto">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div-->
-                                </li>
-                                <li class="uk-card @uk-card-default uk-border uk-margin-small">
-                                    <div class="uk-card-header uk-padding-small uk-margin-auto">
-                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                            <div class="uk-width-auto">
-                                                <img class="uk-border-circle" width="32" height="32" src="https://wadahkode.github.io/portofolio/assets/avatar/no-image.png">
-                                            </div>
-                                            <div class="uk-width-expand">
-                                                <h5 class="@uk-card-title uk-margin-remove-bottom">Sepanjang hidupku hanya ingin bersamamu</h5>
-                                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2020-09-18T13:00">September 18, 2020</time></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--div class="uk-card-body uk-padding-auto uk-margin-auto">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div-->
-                                </li>
-                                </div>
-                            </ul>
+        <nav style="border-bottom: 1px solid #eee" class="uk-navbar uk-navbar-container uk-navbar-transparent uk-background-default @uk-box-shadow-small @uk-container uk-margin uk-padding-small">
+            <div class="@uk-navbar-left uk-flex uk-flex-center uk-flex-between">
+                <a class="uk-logo">
+                    <img width="32" height="32" src="https://wadahkode.github.io/portofolio/assets/avatar/me.jpg"/>
+                </a>
+                <form class="uk-margin-small-left" style="width: 320px">
+                    <div class="@uk-margin">
+                        <div class="@uk-inline">
+                            <span class="uk-form-icon @uk-form-icon-flip" uk-icon="icon: search"></span>
+                            <input class="uk-input uk-border-rounded uk-form-width-large uk-background-muted" type="search" placeholder="mau cari apa?">
                         </div>
-                    </li>
-                    <!--li>
-                        <a href="https://wadahkode.github.io/portofolio/register.html">
-                            <span class="uk-badge uk-padding-small">Register</span>
-                        </a>
-                    </li-->
-                    <li class="profile">
-                        <a href="#">
-                            <img width="28" height="28" src="https://wadahkode.github.io/portofolio/assets/avatar/me.jpg"/>&nbsp;<span uk-icon="icon: chevron-down"></span>
-                        </a>
-                        <div class="uk-navbar-dropdown uk-background-muted uk-padding-small uk-margin-remove-top">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <span class="firebase-email uk-text-muted">wadahkode</span>
-                                <hr/>
-                                <li>
-                                    <a href="https://wadahkode.github.io/portofolio/home/profile.html">Profile</a>
-                                </li>
-                                <li>
-                                    <a href="https://wadahkode.github.io/portofolio/home/settings.html">Settings</a>
-                                </li>
-                                <li>
-                                    <a href="#modal-logout" uk-toggle>Logout</a>
-                                    <!-- This is the modal -->
-                                    <div id="modal-logout" uk-modal>
-                                        <div class="uk-modal-dialog uk-modal-body">
-                                            <!--h2 class="uk-modal-title">Keluar</h2-->
-                                            <p>Apakah anda yakin ingin keluar?</p>
-                                            <p class="uk-text-right">
-                                                <button class="uk-button uk-button-small uk-button-default uk-modal-close" type="button">Tidak</button>
-                                                <a href="https://wadahkode.github.io/portofolio/home/logout.html" class="uk-button uk-button-small uk-button-primary">Ya</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </form>
             </div>
         </nav>
         <div id="email-verified"></div>
@@ -249,11 +93,55 @@
             </ul>
         </div>
     </div>
-    <div id="content" class="AppContent uk-position-relative uk-background-muted">
+    
+    
+    <div id="content" class="AppContent uk-position-relative uk-background-default">
         <div class="uk-container-small">
-            <!-- Fitur iklan -->
-<div id="iklan-view" class="uk-position-relative"></div>
-<!-- End fitur iklan -->
+            <ul style="border-top: 1px solid #eee;" class="uk-navbar-nav uk-position-fixed uk-position-bottom uk-position-z-index uk-navbar-container uk-navbar-transparent uk-background-default uk-flex-between" uk-switcher="">
+    <li>
+        <a class="uk-flex uk-flex-column">
+            <span uk-icon="icon: home; ratio: 1"></span>
+            <span class="uk-text-capitalize">beranda</span>
+        </a>
+    </li>
+    <li>
+        <a class="uk-flex uk-flex-column">
+            <span uk-icon="icon: commenting; ratio: 1"></span>
+            <span class="uk-text-capitalize">chat seller</span>
+        </a>
+    </li>
+    <li>
+        <a class="uk-flex uk-flex-column">
+            <span uk-icon="icon: cart; ratio: 1"></span>
+            <span class="uk-text-capitalize">keranjang</span>
+        </a>
+    </li>
+    <li>
+        <a class="uk-flex uk-flex-column">
+            <span uk-icon="icon: more; ratio: 1"></span>
+            <span class="uk-text-capitalize">lainnya</span>
+        </a>
+    </li>
+</ul>
+
+<div class="uk-switcher" style="margin-bottom: 7rem">
+    <div>
+        <!-- Fitur iklan -->
+        <div id="iklan-view" class="uk-position-relative"></div>
+        <!-- End fitur iklan -->
+        <div>
+            <div class="uk-container uk-margin-medium-top uk-margin-small-bottom">
+                <h4>Semua produk</h4>
+            </div>
+            <div id="view-product" class="uk-position-relative uk-child-width-1-2" uk-grid=""></div>
+        </div>
+        <div>
+            <div class="uk-container uk-margin-medium-top uk-margin-small-bottom">
+                <h4>Semua artikel</h4>
+            </div>
+            <div id="view-article" class="uk-margin-large-bottom"></div>
+        </div>
+    </div>
 <!--div class="uk-container uk-background-default uk-box-shadow-small">
     <div class="uk-card">
         <div class="uk-card-header uk-padding-remove-horizontal">
@@ -271,17 +159,11 @@
         </div>
     </div>
 </div-->
-
-<div id="view-product" class="uk-position-relative"></div>
-
-<div class="uk-container">
-    <h3>Artikel</h3>
-    <p>Yuk... baca artikel sebelum belanja.</p>
 </div>
-<div id="view-article"></div>
 
         </div>
     </div>
+    
     <script src="https://wadahkode.github.io/portofolio/vendor/jquery/dist/jquery.min.js"></script>
     <script src="https://wadahkode.github.io/portofolio/vendor/uikit/js/uikit.min.js"></script>
     <script src="https://wadahkode.github.io/portofolio/vendor/uikit/js/app.min.js"></script>
